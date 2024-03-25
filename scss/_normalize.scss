@@ -1,0 +1,46 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $ffMain;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  color: $cText;
+  background: $cBg;
+}
+
+a {
+  text-decoration: none;
+  color: $cText;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input, textarea {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1144px;
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 120px;
+}
+

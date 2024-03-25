@@ -1,0 +1,38 @@
+.h1 {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.h2 {
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.h3 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.h5 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.link {
+  font-size: 20px;
+  line-height: 1.2;
+  color: $cText;
+  font-weight: 700;
+  
+  transition: color .2s linear;
+
+  &:hover {
+    color: $cLink;
+  }
+}
+
+.button-text {
+  font-size: 22px;
+  font-weight: 700;
+}
