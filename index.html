@@ -20,20 +20,23 @@
             <li><a href="#"><img src="./img/social/gmail.png" alt="gmail"></a></li>
           </ul>
         </div>
-        <nav>
+        <nav class="header__navigation">
           <ul class="navigation">
-            <li><a href="#" class="link">Home</a></li>
-            <li><a href="#" class="link">About</a></li>
-            <li><a href="#" class="link">Projects</a></li>
-            <li><a href="#" class="link">Contact</a></li>
+            <li class="navigation__item"><a href="#intro" class="link">Home</a></li>
+            <li class="navigation__item"><a href="#skills" class="link">About</a></li>
+            <li class="navigation__item"><a href="#projects" class="link">Projects</a></li>
+            <li class="navigation__item"><a href="#footer" class="link">Contact</a></li>
           </ul>
         </nav>
+        <button class="burger">
+          <span></span>
+        </button>
       </div>
     </div>
   </header>
 
   <main>
-    <section class="intro">
+    <section class="intro" id="intro">
       <div class="container">
         <div class="intro__inner">
           <div class="intro__content">
@@ -46,7 +49,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="skills">
       <div class="container">
         <h2 class="h2 section-title">What I Do</h2>
         <div class="skills">
@@ -133,7 +136,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="projects">
       <div class="container">
         <h2 class="h2 section-title">Projects</h2>
         <div class="projects">
@@ -157,7 +160,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer id="footer">
     <div class="container">
       <div class="footer__inner">
         <span>Contact Me</span>

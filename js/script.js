@@ -1,10 +1,41 @@
+$('.projects').slick({
+  slidesToShow: 3,
+  infinite: false,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
 $(document).ready(function() {
-  $('.projects').slick({
-    slidesToShow: 3,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    infinite: true,
-    arrows: false
-  });
+  // Burger
+  $('.burger').on('click', () => {
+    $('.header__navigation').toggleClass('active');
+    $('.burger').toggleClass('active')
+    $('body').toggleClass('burger-active')
+  })
+
+  $('.navigation__item').on('click', () => {
+    $('.header__navigation').removeClass('active');
+    $('.burger').removeClass('active')
+    $('body').removeClass('burger-active')
+  })
+
+  // Animations
+  $('.intro__content').animate({opacity: 1}, 500)
+  $('.section-title').animate({left: 0, opacity: 1}, 500)
+  $('.use').animate({opacity: 1}, 500)
+  $('.skill').animate({opacity: 1}, 500)
+  $('.project').animate({opacity: 1}, 500)
+  $('.number').animate({opacity: 1}, 500)
 }
 )

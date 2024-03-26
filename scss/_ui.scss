@@ -8,9 +8,13 @@
   background-color: #0F0F0F;
   width: fit-content;  
 
-  padding: 8px 24px;
+  padding: 16px 32px;
 
-  transition: background-color .2s linear,;
+  transition: background-color .2s linear;
+  
+  @media(max-width: 1920px) {
+    padding: 8px 24px;
+  }
 
   &:hover {
     background-color: $cLink;
@@ -21,6 +25,9 @@
   margin-bottom: 80px;
   position: relative;
 
+  left: -50px;
+  opacity: 0;
+
   &::after {
     content: '';
 
@@ -29,10 +36,81 @@
     left: 0;
 
     border-radius: 4px;
-    width: 54px;
     height: 7px;
+    width: 108px;
     background-color: $cPrimary;
-
+    
     display: block;
+    
+    @media(max-width: 1920px) {
+      width: 54px;
+    }
+  }
+}
+
+.burger {
+  display: none;
+
+  width: 30px;
+  height: 30px;
+
+  span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+
+    width: 30px;
+    height: 4px;
+
+
+    border-radius: 12px;
+    background-color: $cText;
+
+    transition: width .2s linear;
+
+    &::before, &::after {
+      content: '';
+
+      position: absolute;
+      width: 30px;
+      height: 100%;
+
+      background-color: $cText;
+      border-radius: 12px;
+      left: 0;
+
+      transition: transform .2s linear;
+    }
+
+    &::before {
+      top: -9px;
+    }
+
+    &::after {
+      bottom: -9px;
+    }
+  }
+
+  &.active {
+    span {
+      width: 0;
+
+      &::before {
+        transform: rotate(45deg);
+        top: 0;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+        bottom: 0;
+      }
+    }
+  }
+
+  @media(max-width: 768px) {
+    display: block;
+    position: relative;
+    z-index: 100;
   }
 }
