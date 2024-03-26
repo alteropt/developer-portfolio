@@ -37,5 +37,8 @@ $(document).ready(function() {
   $('.skill').animate({opacity: 1}, 500)
   $('.project').animate({opacity: 1}, 500)
   $('.number').animate({opacity: 1}, 500)
+  $('.desc__inner >div').animate({opacity: 1}, 500)
+  $('.project-description').animate({opacity: 1}, 500)
+  $('.app__inner').animate({opacity: 1}, 500)
 }
 )

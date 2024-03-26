@@ -114,7 +114,10 @@ header {
     right: -200px;
     transform: rotate(35deg);
 
-    background-color: $cBg;
+    background-image: url("https://w0.peakpx.com/wallpaper/671/307/HD-wallpaper-flutter-code-coder-dart-google-programming-thumbnail.jpg");
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
     border: 1px solid $cLink;
 
     display: block;
@@ -509,3 +512,171 @@ footer {
     }
   }
 }
+
+/* Project */
+.app {
+  padding-top: 200px;
+
+  @media(max-width: 1920px) {
+    padding-top: 132px;
+  }
+}
+
+.app__inner {
+  background-color: #2B2B2B;
+  border-radius: 45px;
+  gap: 24px;
+
+  padding: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+
+  @media(max-width: 992px) {
+    flex-direction: column-reverse;
+    padding: 16px;
+  }
+}
+
+.app__info {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media(max-width: 1440px) {
+    flex-basis: 20%;
+  }
+
+  @media(max-width: 992px) {
+    flex-basis: 100%;
+  }
+}
+
+.app__suptitle {
+  color: $cPrimary;
+  font-size: 36px;
+
+  @media(max-width: 1440px) {
+    font-size: 20px;
+  }
+}
+
+.app__title {
+  font-weight: 500;
+  max-width: 500px;
+
+  @media(max-width: 425px) {
+    font-size: 40px;
+  }
+}
+
+.app__photos {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 48px;
+  flex-basis: 50%;
+
+  @media(max-width: 1440px) {
+    flex-basis: 60%;
+  }
+
+  @media(max-width: 992px) {
+    flex-basis: 100%;
+    max-width: 100%;
+    gap: 8px;
+  }
+
+  @media(max-width: 425px) {
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+  }
+
+  img {                
+    &:last-child {
+      position: relative;
+      top: 48px;
+
+      @media(max-width: 425px) {
+        position: static;
+      }
+    }
+
+    @media(max-width: 768px) {
+      max-width: 132px;
+    }
+  }
+}
+
+.project-description {
+  font-weight: 500;
+  
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin-bottom: 40px;
+
+  opacity: 0;
+}
+
+// Project description
+.desc__inner {
+  display: flex;
+  justify-content: space-between;
+
+  @media(max-width: 768px) {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  >div {
+    flex-basis: 50%;
+    opacity: 0;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    li {
+      padding-left: 24px;
+      position: relative;
+      font-size: 36px;
+
+      @media(max-width: 1440px) {
+        font-size: 24px;
+      }
+
+      @media(max-width: 992px) {
+        font-size: 20px;
+      }
+
+      &::before {
+        content: '';
+
+        position: absolute;
+        top: 5px;
+        left: 0;
+
+        width: 15px;
+        height: 15px;
+
+        background-image: url(../img/li.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}
+

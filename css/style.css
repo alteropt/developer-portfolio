@@ -348,7 +348,10 @@ header {
   top: -550px;
   right: -200px;
   transform: rotate(35deg);
-  background-color: #1B1B1B;
+  background-image: url("https://w0.peakpx.com/wallpaper/671/307/HD-wallpaper-flutter-code-coder-dart-google-programming-thumbnail.jpg");
+  background-size: cover;
+  background-position: bottom left;
+  background-repeat: no-repeat;
   border: 1px solid #E80000;
   display: block;
   border-radius: 342px;
@@ -712,4 +715,167 @@ footer {
   .footer__inner span {
     font-size: 35px;
   }
+}
+
+/* Project */
+.app {
+  padding-top: 200px;
+}
+@media (max-width: 1920px) {
+  .app {
+    padding-top: 132px;
+  }
+}
+
+.app__inner {
+  background-color: #2B2B2B;
+  border-radius: 45px;
+  gap: 24px;
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+@media (max-width: 992px) {
+  .app__inner {
+    flex-direction: column-reverse;
+    padding: 16px;
+  }
+}
+
+.app__info {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  .app__info {
+    flex-basis: 20%;
+  }
+}
+@media (max-width: 992px) {
+  .app__info {
+    flex-basis: 100%;
+  }
+}
+
+.app__suptitle {
+  color: #E42C2C;
+  font-size: 36px;
+}
+@media (max-width: 1440px) {
+  .app__suptitle {
+    font-size: 20px;
+  }
+}
+
+.app__title {
+  font-weight: 500;
+  max-width: 500px;
+}
+@media (max-width: 425px) {
+  .app__title {
+    font-size: 40px;
+  }
+}
+
+.app__photos {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 48px;
+  flex-basis: 50%;
+}
+@media (max-width: 1440px) {
+  .app__photos {
+    flex-basis: 60%;
+  }
+}
+@media (max-width: 992px) {
+  .app__photos {
+    flex-basis: 100%;
+    max-width: 100%;
+    gap: 8px;
+  }
+}
+@media (max-width: 425px) {
+  .app__photos {
+    flex-wrap: wrap;
+    padding-bottom: 12px;
+  }
+}
+.app__photos img:last-child {
+  position: relative;
+  top: 48px;
+}
+@media (max-width: 425px) {
+  .app__photos img:last-child {
+    position: static;
+  }
+}
+@media (max-width: 768px) {
+  .app__photos img {
+    max-width: 132px;
+  }
+}
+
+.project-description {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+  opacity: 0;
+}
+
+.desc__inner {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .desc__inner {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+.desc__inner > div {
+  flex-basis: 50%;
+  opacity: 0;
+}
+.desc__inner > div h2 {
+  margin-bottom: 40px;
+}
+.desc__inner > div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.desc__inner > div li {
+  padding-left: 24px;
+  position: relative;
+  font-size: 36px;
+}
+@media (max-width: 1440px) {
+  .desc__inner > div li {
+    font-size: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .desc__inner > div li {
+    font-size: 20px;
+  }
+}
+.desc__inner > div li::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/li.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
