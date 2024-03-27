@@ -1,6 +1,7 @@
 $('.projects').slick({
   slidesToShow: 3,
   infinite: false,
+  adaptiveHeight: true,
   responsive: [
     {
       breakpoint: 992,

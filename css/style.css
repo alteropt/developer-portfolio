@@ -47,7 +47,6 @@ button, input, textarea {
 }
 
 img {
-  display: block;
   height: auto;
   max-width: 100%;
 }
@@ -73,7 +72,7 @@ section {
 }
 
 .h1 {
-  font-size: 140px;
+  font-size: 100px;
   line-height: 1.1;
   font-weight: 800;
 }
@@ -648,6 +647,10 @@ header {
   gap: 16px;
   opacity: 0;
 }
+.projects .project img {
+  height: 500px;
+  width: auto;
+}
 .projects .project span {
   font-size: 25px;
 }
@@ -669,22 +672,24 @@ header {
   }
 }
 .projects .slick-prev {
-  left: 0;
+  right: calc(100% + 12px);
   background-image: url(../img/slider-arrow-left.svg);
 }
 @media (max-width: 768px) {
   .projects .slick-prev {
     left: calc(50% - 12px);
+    right: auto;
     transform: translateX(-50%);
   }
 }
 .projects .slick-next {
-  right: 0;
+  left: calc(100% + 12px);
   background-image: url(../img/slider-arrow-right.svg);
 }
 @media (max-width: 768px) {
   .projects .slick-next {
     right: calc(50% - 12px);
+    left: auto;
     transform: translateX(50%);
   }
 }

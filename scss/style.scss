@@ -436,9 +436,13 @@ header {
     align-items: center;
     justify-content: center;
     gap: 16px; 
-
     opacity: 0;
-  
+
+    img {
+      height: 500px;
+      width: auto;
+    }
+
     span {
       font-size: 25px;
     }
@@ -459,26 +463,28 @@ header {
     background-repeat: no-repeat;
 
     @media(max-width: 768px) {
-      top: calc(100% + 24px);  
+      top: calc(100% + 24px); 
     }
   }
 
   .slick-prev {
-    left: 0;
+    right: calc(100% + 12px);
     background-image: url(../img/slider-arrow-left.svg);
 
     @media(max-width: 768px) {
       left: calc(50% - 12px);
+      right: auto;
       transform: translateX(-50%);
     }
   }
 
   .slick-next {
-    right: 0;
+    left: calc(100% + 12px);
     background-image: url(../img/slider-arrow-right.svg);
 
     @media(max-width: 768px) {
       right: calc(50% - 12px);
+      left: auto;
       transform: translateX(50%);
     }
   }
