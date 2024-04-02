@@ -587,6 +587,14 @@ footer {
   padding-bottom: 48px;
   flex-basis: 50%;
 
+  figure {
+    flex-basis: 50%;
+
+    &:last-child {
+      margin-top: 48px;
+    }
+  }
+
   @media(max-width: 1440px) {
     flex-basis: 60%;
   }

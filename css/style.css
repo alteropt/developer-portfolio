@@ -793,6 +793,12 @@ footer {
   padding-bottom: 48px;
   flex-basis: 50%;
 }
+.app__photos figure {
+  flex-basis: 50%;
+}
+.app__photos figure:last-child {
+  margin-top: 48px;
+}
 @media (max-width: 1440px) {
   .app__photos {
     flex-basis: 60%;
